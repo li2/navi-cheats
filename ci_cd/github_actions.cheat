@@ -1,0 +1,7 @@
+% GitHub Actions
+
+# Encode keystore file to base64 and copy to clipboard
+openssl base64 < <keystore_path> | tr -d '\n' | pbcopy
+
+# Log into Firebase using your Google account to get the token.
+firebase login:ci
