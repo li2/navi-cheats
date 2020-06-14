@@ -1,0 +1,4 @@
+% git
+
+# Delete a remote and local tag
+git push --delete origin <tag> ; git tag --delete <tag>
