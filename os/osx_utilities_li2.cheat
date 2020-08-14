@@ -1,0 +1,4 @@
+% osx, mac os - li2
+
+# download youtube videos
+youtube-dl -f bestvideo+bestaudio <url>
