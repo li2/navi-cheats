@@ -1,0 +1,65 @@
+% Navi Cheats 21
+
+# Importing navi cheatsheets
+navi repo browse
+
+# Import navi cheatsheets from given git repository
+navi repo add <repo>
+
+# Import navi cheatsheets from my personal repository
+navi repo add git@github.com:li2/navi-cheats.git
+
+
+
+
+% Android Keystore 21
+
+# Encode keystore file to base64 and copy to clipboard
+openssl base64 < <keystore_path> | tr -d '\n' | pbcopy
+
+# Release fingerprint of keystore certificate
+keytool -list -v -keystore <keystore_path>
+
+# Debug fingerprint of keystore certificate
+keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+
+
+
+
+% iOS 21
+
+# Open iOS simulator
+open -a Simulator
+
+
+
+
+% Git 21
+
+# Delete a remote and local tag
+git push --delete origin <tag> ; git tag --delete <tag>
+
+# To leave the file in the repo but ignore future changes to it.
+git update-index --assume-unchanged <path>
+
+
+
+
+% Fastlane 21: automate beta deployments and releases for iOS and Android apps
+
+# Setting up fastlane
+fastlane init
+
+# Add App Distribution to your fastlane configuration
+fastlane add_plugin firebase_app_distribution
+
+# Test the connection to Play Console with credentials json file
+fastlane run validate_play_store_json_key json_key:<path>
+
+
+
+
+% OSX 21
+
+# download youtube videos
+youtube-dl -f bestvideo+bestaudio <url>
