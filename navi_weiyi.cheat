@@ -42,7 +42,8 @@ flutter packages get
 # verify that the flutter command is available
 which flutter
 
-
+# serve your app from localhost in Chrome
+flutter run -d chrome
 
 
 % Git 21
