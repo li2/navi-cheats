@@ -34,6 +34,17 @@ open -a Simulator
 
 
 
+% Flutter 21
+
+# get flutter packages == Android gradle
+flutter packages get
+
+# verify that the flutter command is available
+which flutter
+
+
+
+
 % Git 21
 
 # Delete a remote and local tag
