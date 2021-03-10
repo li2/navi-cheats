@@ -11,7 +11,6 @@ navi repo add git@github.com:li2/navi-cheats.git
 
 
 
-
 % Android Keystore 21
 
 # Encode keystore file to base64 and copy to clipboard
@@ -23,6 +22,8 @@ keytool -list -v -keystore <keystore_path>
 # Debug fingerprint of keystore certificate
 keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
 
+# Open remote desktop of Android device
+scrcpy
 
 
 
@@ -44,6 +45,7 @@ which flutter
 
 # serve your app from localhost in Chrome
 flutter run -d chrome
+
 
 
 % Git 21
@@ -75,3 +77,27 @@ fastlane run validate_play_store_json_key json_key:<path>
 
 # download youtube videos
 youtube-dl -f bestvideo+bestaudio <url>
+
+
+
+
+% Ubuntu 21
+
+# Print Architecture
+dpkg --print-architecture
+
+
+# SSH configuration
+sudo gedit /etc/ssh/sshd_config
+
+# SSH server start
+sudo /etc/init.d/ssh start
+
+# SSH server stop
+sudo /etc/init.d/ssh stop
+
+# SSH is running?
+ps -e | grep ssh
+
+# SSH connect to testlab
+ssh user@192.168.1.217

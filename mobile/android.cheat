@@ -21,6 +21,10 @@ adb -s <device> shell am start <uri>
 $ device: adb devices | grep -v devices | grep device | cut -f 1
 
 
+# print apk version
+adb shell dumpsys package com.eroad.dvr | grep versionName
+
+
 
 % android, emulator
 
