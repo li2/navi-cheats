@@ -15,7 +15,6 @@ navi repo add git@github.com:li2/navi-cheats.git
 # Open Android gradle downloaded dependencies folder
 open ~/.gradle/caches/modules-2/files-2.1/
 
-
 % Android Keystore 21
 
 # Encode keystore file to base64 and copy to clipboard
@@ -85,6 +84,7 @@ fastlane run validate_play_store_json_key json_key:<path>
 youtube-dl -f bestvideo+bestaudio <url>
 # download youtube mp3
 youtube-dl --extract-audio --audio-format mp3 <url>
+
 
 
 % Ubuntu 21
