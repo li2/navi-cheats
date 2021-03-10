@@ -15,7 +15,6 @@ navi repo add git@github.com:li2/navi-cheats.git
 # Open Android gradle downloaded dependencies folder
 open ~/.gradle/caches/modules-2/files-2.1/
 
-
 % Android Keystore 21
 
 # Encode keystore file to base64 and copy to clipboard
@@ -87,11 +86,11 @@ youtube-dl -f bestvideo+bestaudio <url>
 youtube-dl --extract-audio --audio-format mp3 <url>
 
 
+
 % Ubuntu 21
 
 # Print Architecture
 dpkg --print-architecture
-
 
 # SSH configuration
 sudo gedit /etc/ssh/sshd_config
@@ -107,3 +106,6 @@ ps -e | grep ssh
 
 # SSH connect to testlab
 ssh user@192.168.1.217
+
+# Install slack
+sudo dpkg -i $SLACK_INSTALL_PACKAGE
