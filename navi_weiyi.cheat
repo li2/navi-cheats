@@ -10,6 +10,11 @@ navi repo add <repo>
 navi repo add git@github.com:li2/navi-cheats.git
 
 
+% Android 21
+
+# Open Android gradle downloaded dependencies folder
+open ~/.gradle/caches/modules-2/files-2.1/
+
 
 % Android Keystore 21
 
@@ -73,10 +78,11 @@ fastlane run validate_play_store_json_key json_key:<path>
 
 
 
-% OSX 21
+% MAC OSX 21
 
 # download youtube videos
 youtube-dl -f bestvideo+bestaudio <url>
+
 
 
 % Ubuntu 21
