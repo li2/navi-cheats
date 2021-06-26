@@ -1,0 +1,26 @@
+% AWS - Create a device certificate
+
+# [01] Name for your device cert.
+deviceCert=<deviceCert>
+
+# [02] Generate a key pair.
+openssl genrsa -out $deviceCert.key 2048
+
+# [03] Create a CSR for the device certificate.
+openssl req -new -key $deviceCert.key -out $deviceCert.csr
+
+# [04] Create a device certificate from the CSR.
+openssl x509 -req -in $deviceCert.csr \
+  -CA <rootCA.pem> \
+  -CAkey <rootCA.key> \
+  -CAcreateserial \
+  -out $deviceCert.pem -days 500 -sha256
+
+# [05] Put device cert and cert of your CA in one file
+cat $deviceCert.pem rootCA.pem > ${deviceCert}AndCACert.crt
+
+# [06] Connect to AWS IoT by publishing a message
+mosquitto_pub --cafile $ROOT_CA_CRT \
+    --cert ${deviceCert}AndCACert.crt --key $deviceCert.key \
+    -h $IOT_ENDPOINT -p 8883 -q 1 -t  <topic> \
+    -i  $deviceCert --tls-version tlsv1.2 -m '{"let-me": "in"}' -d
