@@ -1,5 +1,5 @@
 % AWS - zsh plugin
-# set profile (~/.aws/config), equivalent to run a command with --profile user1
+# set profile (~/.aws/config), equivalent to run a command with --profile option.
 asp <profile>
 
 
