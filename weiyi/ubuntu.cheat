@@ -1,0 +1,7 @@
+% Ubuntu 21
+
+# Print Architecture
+dpkg --print-architecture
+
+# Install slack
+sudo dpkg -i $SLACK_INSTALL_PACKAGE

@@ -1,0 +1,10 @@
+% Navi 21
+
+# Importing navi cheatsheets
+navi repo browse
+
+# Import navi cheatsheets from given git repository
+navi repo add <repo>
+
+# Import navi cheatsheets from my personal repository
+navi repo add git@github.com:li2/navi-cheats.git

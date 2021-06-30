@@ -1,0 +1,7 @@
+% MAC OSX 21
+
+# download youtube videos
+youtube-dl -f bestvideo+bestaudio <url>
+
+# download youtube mp3
+youtube-dl --extract-audio --audio-format mp3 <url>

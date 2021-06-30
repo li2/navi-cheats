@@ -1,4 +1,4 @@
-% Dashcam
+% Dashcam 21
 
 # get the serial no. of the connected device.
 adb get-serialno
@@ -20,3 +20,6 @@ adb shell am force-stop com.eroad.dvr
 
 # print (only) the logs of the DVR app
 adb logcat --pid $(adb shell "ps -A | grep com.eroad.dvr | cut -F 2")
+
+# SSH connect to testlab
+ssh user@192.168.1.217

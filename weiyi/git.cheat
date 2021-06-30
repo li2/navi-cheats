@@ -1,0 +1,10 @@
+% Git 21
+
+# Delete a remote and local tag
+git push --delete origin <tag> ; git tag --delete <tag>
+
+# To leave the file in the repo but ignore future changes to it.
+git update-index --assume-unchanged <path>
+
+# Show logs between two commits in reverse order
+git log --reverse <revision1>..<revision2> | grep -E 'DASH|CLAR|TEL'

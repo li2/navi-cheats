@@ -1,9 +1,10 @@
-% AWS - zsh plugin
+% AWS 21 - zsh plugin
+
 # set profile (~/.aws/config), equivalent to run a command with --profile option.
 asp <profile>
 
 
-% AWS - Create a device certificate
+% AWS 21 - Create a device certificate
 
 # [01] Name for your device cert.
 deviceCert=<deviceCert>

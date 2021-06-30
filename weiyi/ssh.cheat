@@ -1,0 +1,13 @@
+% SSH 21
+
+# SSH configuration
+sudo gedit /etc/ssh/sshd_config
+
+# SSH server start
+sudo /etc/init.d/ssh start
+
+# SSH server stop
+sudo /etc/init.d/ssh stop
+
+# SSH is running?
+ps -e | grep ssh

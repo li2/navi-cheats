@@ -1,0 +1,43 @@
+% Android 21
+
+# Open Android gradle downloaded dependencies folder
+open ~/.gradle/caches/modules-2/files-2.1/
+
+
+
+
+% Android Keystore 21
+
+# Encode keystore file to base64 and copy to clipboard
+openssl base64 < <keystore_path> | tr -d '\n' | pbcopy
+
+# Fingerprint of release keystore certificate
+keytool -list -v -keystore <keystore_path>
+
+# Fingerprint of debug keystore certificate
+keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+
+# Open remote desktop of Android device
+scrcpy
+
+
+
+
+% iOS 21
+
+# Open iOS simulator
+open -a Simulator
+
+
+
+
+% Flutter 21
+
+# get flutter packages == Android gradle
+flutter packages get
+
+# verify that the flutter command is available
+which flutter
+
+# serve your app from localhost in Chrome
+flutter run -d chrome
