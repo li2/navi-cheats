@@ -1,5 +1,8 @@
 % Dashcam 21
 
+# sign dashcam APK
+apksigner sign --key $DASHCAM_APK_SIGNER_KEY --cert $DASHCAM_APK_SIGNER_CERT <apk>
+
 # get the serial no. of the connected device.
 adb get-serialno
 
