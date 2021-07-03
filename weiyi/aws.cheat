@@ -1,7 +1,12 @@
-% AWS 21 - zsh plugin
+% AWS 21 - Credentials
 
-# set profile (~/.aws/config), equivalent to run a command with --profile option.
+# AWS profile(~/.aws/config) selection by zsh plugin, equivalent to run a command with --profile option.
 asp <profile>
+
+
+# Install/Upgrade gimme-aws-creds, a CLI that utilizes Okta to acquire temporary AWS credentials.
+pip3 install --upgrade gimme-aws-creds
+
 
 
 % AWS 21 - Create a device certificate
