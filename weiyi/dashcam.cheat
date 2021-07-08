@@ -6,7 +6,10 @@ apksigner sign --key $DASHCAM_APK_SIGNER_KEY --cert $DASHCAM_APK_SIGNER_CERT <ap
 # get the serial no. of the connected device.
 adb get-serialno
 
-# get the dashcam f/w version (aka base image or OS)
+# get dashcam App version
+adb shell dumpsys package com.eroad.dvr | grep versionName | head -n 1
+
+# get dashcam f/w version (aka base image or OS)
 adb shell getprop | grep ro.build.display
 
 # get the MiTAC f/w region image version.
@@ -14,9 +17,6 @@ adb shell getprop|grep rgimg.release_ver
 
 # get a list of EROAD packages installed on the device.	
 adb shell pm list packages | grep eroad
-
-# get the base and current versions of the new (com.eroad.dvr) DVR app.
-adb shell dumpsys package com.eroad.dvr | grep version
 
 # stop the new DVR app	
 adb shell am force-stop com.eroad.dvr
